@@ -18,7 +18,11 @@
         // root.render(heading);
 
         //if we want to  pass multiple attribute we keetp ract in array
-       
+
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const parent = React.createElement(
     "div",
     { id: "parent" },
@@ -28,14 +32,25 @@ const parent = React.createElement(
         { id: "child" },
 
         [
-            React.createElement("h1", {}, "I am in h1 tag"),
-            React.createElement("h2", {}, "I am in h2 tag")
+            React.createElement(
+                "h1",
+                { key: "heading1" },
+                "I am in h1 tag"
+            ),
+
+            React.createElement(
+                "h2",
+                { key: "heading2" },
+                "I am in h2 tag"
+            )
         ]
     )
 );
 
 console.log(parent);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(
+    document.getElementById("root")
+);
 
 root.render(parent);
