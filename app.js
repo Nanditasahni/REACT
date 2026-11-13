@@ -19,38 +19,16 @@
 
         //if we want to  pass multiple attribute we keetp ract in array
 
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-    "div",
-    { id: "parent" },
-
-    React.createElement(
-        "div",
-        { id: "child" },
-
-        [
-            React.createElement(
-                "h1",
-                { key: "heading1" },
-                "I am in h1 tag"
-            ),
-
-            React.createElement(
-                "h2",
-                { key: "heading2" },
-                "I am in h2 tag"
-            )
-        ]
-    )
+const heading = React.createElement(
+    "h1",
+    { id: "heading" },
+    "Hey I am React"
 );
+const jsxHeading=<h1 id="heading"> i am react in jsx</h1>
 
-console.log(parent);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const root = ReactDOM.createRoot(
-    document.getElementById("root")
-);
-
-root.render(parent);
+root.render(jsxHeading);
