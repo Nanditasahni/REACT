@@ -19,3 +19,30 @@ HTTPs
 
 
 Tree Shaking -remove unused code
+
+what is react component :
+we know tha component meanse everything like heading button ,footer and all
+but react component is two type 
+1 classless=> it is old component
+ 2  functional =>it is new component
+
+ fun component :---
+ / const fn1=()=>true;
+ // if we write {} then we use return ture other wise there is no need to write return  
+// const fn2=()=>{
+//     return ture;
+// }
+
+///react functional component
+//react component
+const HeadingComponent=()=>(
+    <div id="container">
+    return <h1 className="heading">Namaste react functional component</h1>;
+    </div>
+);
+
+
+// we can not render HeadingComponent like root.render(HeadingComponent)
+// beacose it is component not element so we wrape int on page like 
+// root.render(<Headingcomponent/>)
+

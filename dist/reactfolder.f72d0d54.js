@@ -746,14 +746,64 @@ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
 }, "Hey I am React");
 const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     id: "heading",
-    children: " i am react in jsx"
+    children: " i am react in jsx \uD83D\uDE01"
 }, void 0, false, {
     fileName: "app.js",
-    lineNumber: 30,
+    lineNumber: 32,
     columnNumber: 18
 }, undefined);
+// const fn1=()=>true;
+// if we write {} then we use return ture other wise there is no need to write return  
+// const fn2=()=>{
+//     return ture;
+// }
+///react functional component
+//react component
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        className: "head",
+        tabIndex: "5",
+        children: " hey i man ract using JSX\uD83D\uDE01"
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 43,
+        columnNumber: 5
+    }, undefined);
+_c = Title;
+const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 47,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "heading",
+                children: "Namaste react functional component"
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined),
+            ";"
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 46,
+        columnNumber: 5
+    }, undefined);
+_c1 = HeadingComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+    fileName: "app.js",
+    lineNumber: 54,
+    columnNumber: 13
+}, undefined)); // we can not render HeadingComponent like root.render(HeadingComponent)
+ // beacose it is component not element so we wrape int on page like 
+ // root.render(<Headingcomponent/>)
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$5fe5.postlude(module);
 } finally {
